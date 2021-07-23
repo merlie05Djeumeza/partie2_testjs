@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <form>
+            <p >Formulaire d'inscription </p>
+
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" name="username">
+
+            <label for="email">Email</label>
+            <input type="email" name="email">
+
+            <label for="text">Mot de passe </label>
+            <input name="text" type="text">
+        </form>
+
+        <p class="warning" id="warn">
+            Ce formulaire est à remplir par tous ceux qui arriveront sur cette page.
+            <a id="lien" href="#">Conditions de fiabilité </a>
+        </p>
+        
+        <article id="article">
+            <p class="bloc">
+                attack makes it very difficult for patients to perform everyday
+                chores and on occasions can be life-threatening. According
+                to the World Health Organization (WHO), 70 million people
+                around the globe suffer from epilepsy with around one-third
+                of these patients resistant to anti-epileptic medication [1]. The
+                early prediction of these attacks before they occur will be
+                helpful for the patients to take precautionary measures and
+            </p>
+
+            <p class="bloc" id="paragraphe1">
+                attack makes it very difficult for patients to perform everyday
+                chores and on occasions can be life-threatening. According
+                to the World Health Organization (WHO), 70 million people
+                around the globe suffer from epilepsy with around one-third
+                of these patients resistant to anti-epileptic medication [1]. The
+                early prediction of these attacks before they occur will be
+                helpful for the patients to take precautionary measures and
+            </p>
+            
+        </article>
+
+        <script type="text/javascript">
+            document.getElementById("lien").style = "text-decoration:none;color:yellow";
+            
+        </script>
+
+        <script type="text/javascript">
+    	var cible=document.getElementById("paragraphe1");
+    		cible.innerHTML="Nouveau contenu pour ce bloc.";
+        </script> 
+
+
+        <script type="text/javascript">
+        	document.getElementById("warn").style="color:red";
+        </script>
+        
+
+        <script type="text/javascript">
+            const article = document.getElementById('article');
+
+           	var p = document.createElememt("p");
+            p.innerText = "Merlie_Djeumeza";
+            article.appendChild(p);
+        </script>
+
+    </body>
+
+
+</html>
