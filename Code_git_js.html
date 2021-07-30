@@ -4,6 +4,7 @@
     	<meta charset="utf-8">
         <title>Document</title>
     </head>
+    <script async src="script_test_js.js"> </script>
     <body>
 
         <form>
@@ -15,8 +16,12 @@
             <label for="email">Email</label>
             <input type="email" name="email">
 
-            <label for="text">Mot de passe </label>
-            <input name="text" type="text">
+            <label id="pwd" for="password">Mot de passe </label>
+            <input name="text" type="password">
+
+            <button id="bouton">
+                afficher password
+            </button>
         </form>
 
         <p class="warning" id="warn">
@@ -46,30 +51,6 @@
             </p>
             
         </article>
-
-        <script type="text/javascript">
-            document.getElementById("lien").style = "text-decoration:none;color:yellow";
-            
-        </script>
-
-        <script type="text/javascript">
-    	var cible=document.getElementById("paragraphe1");
-    		cible.innerHTML="Nouveau contenu pour ce bloc.";
-        </script> 
-
-
-        <script type="text/javascript">
-        	document.getElementById("warn").style="color:red";
-        </script>
-        
-
-        <script type="text/javascript">
-            const article = document.getElementById('article');
-
-           	var p = document.createElememt("p");
-            p.innerText = "Merlie_Djeumeza";
-            article.appendChild(p);
-        </script>
 
     </body>
 
